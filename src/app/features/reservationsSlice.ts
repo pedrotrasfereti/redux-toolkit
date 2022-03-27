@@ -1,6 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
+interface ReservationState {
+  value: string[];
+}
+
+const initialState: ReservationState = {
   value: [], // reservations array
 };
 
