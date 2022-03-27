@@ -14,7 +14,7 @@ export const reservationsSlice = createSlice({
   reducers: {
     addReservation: (state, action: PayloadAction<string>) => {
       state.value.push(action.payload);
-    }
+    },
   },
 });
 
