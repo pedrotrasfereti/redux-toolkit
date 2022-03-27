@@ -6,8 +6,9 @@ import './App.css';
 import ReservationCard from './components/ReservationCard';
 
 function App() {
-  const reservations = useSelector((state: RootState) =>
-    state.reservations.value);
+  const reservations = useSelector((state: RootState) => (
+    state.reservations.value
+  ));
 
   return (
     <div className="App">
