@@ -2,11 +2,17 @@ import React from 'react';
 
 interface ReservationCardTypes {
   name: string;
+  key: number;
 }
 
-function ReservationCard({ name }: ReservationCardTypes) {
+function ReservationCard({ name, key }: ReservationCardTypes) {
   return (
-    <div className="reservation-card-container">{ name }</div>
+    <div
+      key={ key }
+      className='reservation-card-container'
+    >
+      { name }
+    </div>
   )
 };
 
