@@ -33,7 +33,7 @@ function App() {
             <div className="reservation-cards-container">
               {
                 reservations.map((name: string, index) => (
-                  ReservationCard({ name, key: index }))
+                  ReservationCard({ name, index }))
                 )
               }
             </div>

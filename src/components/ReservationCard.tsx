@@ -1,15 +1,24 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeReservation } from '../app/features/reservationsSlice';
 
 interface ReservationCardTypes {
   name: string;
-  key: number;
+  index: number;
 }
 
-function ReservationCard({ name, key }: ReservationCardTypes) {
+function ReservationCard({ name, index }: ReservationCardTypes) {
+  const dispatch = useDispatch();
+
+  const handleRemoveReservation = (index: number) => {
+    dispatch(removeReservation(index));
+  };
+
   return (
     <div
-      key={ key }
+      key={ index }
       className='reservation-card-container'
+      onClick={ () => handleRemoveReservation(index) }
     >
       { name }
     </div>
