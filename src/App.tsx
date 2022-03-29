@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './app/store';
 
 import './App.css';
 
 import ReservationCard from './components/ReservationCard';
-import { addReservation } from './app/features/reservationsSlice';
+import { addReservation } from './app/features/reservationSlice';
 
 function App() {
   const [reservationName, setReservationName] = useState('');

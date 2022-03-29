@@ -1,6 +1,5 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeReservation } from '../app/features/reservationsSlice';
+import { removeReservation } from '../app/features/reservationSlice';
 
 interface ReservationCardTypes {
   name: string;
